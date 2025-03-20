@@ -1,0 +1,36 @@
+# API密钥和环境变量
+.env
+
+# 输出目录
+/output/
+
+# 输入文件目录
+/input/
+
+# 缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 虚拟环境
+venv/
+env/
+ENV/
+
+# IDE相关文件
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志文件
+*.log
+
+# 测试文件和临时文件
+/test_files/
+*.tmp
+*.bak 
