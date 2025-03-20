@@ -23,7 +23,7 @@ An AI-powered document content rewriting tool that automatically extracts, analy
 
 ### Results Showcase
 
-| col1                                           | col2                                           |  |
+| before                                         | after                                          |  |
 | ---------------------------------------------- | ---------------------------------------------- | - |
 | ![1742474250831](image/README/1742474250831.png) | ![1742474232330](image/README/1742474232330.png) |  |
 | ![1742474295252](image/README/1742474295252.png) | ![1742474347127](image/README/1742474347127.png) |  |
