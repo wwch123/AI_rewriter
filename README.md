@@ -53,12 +53,67 @@
    ```
 3. 配置API密钥:
 
-   - 创建 `.env` 文件在项目根目录
-   - 添加以下内容（填入您自己的API密钥）:
+   - 复制 `.env.example` 文件并重命名为 `.env`
+   - 编辑 `.env` 文件，添加您的API密钥（您至少需要设置一个API密钥）:
      ```
      ZHIPU_API_KEY=your_zhipu_api_key_here
      TONGYI_API_KEY=your_tongyi_api_key_here
      ```
+   - 您可以在以下网站获取API密钥:
+     - 智谱AI: https://open.bigmodel.cn/
+     - 通义千问: https://dashscope.aliyun.com/
+
+### API密钥说明
+
+本工具支持两种大语言模型API:
+
+- **智谱AI (GLM-4)**：支持高质量的中文内容重写，推荐使用
+- **通义千问 (Qwen)**：阿里云提供的大语言模型，内容重写质量良好
+
+您只需要配置其中一种API密钥即可使用对应的服务。在图形界面中，您也可以选择使用哪种API。
+
+## 快速开始
+
+### 1. 准备环境
+```bash
+# 克隆项目
+git clone https://github.com/yourusername/content-rewriter.git
+cd content-rewriter
+
+# 安装依赖
+pip install -r requirements.txt
+```
+
+### 2. 配置API密钥
+1. 复制环境变量模板：
+   ```bash
+   cp .env.example .env
+   ```
+2. 编辑 `.env` 文件，填入您的API密钥（选择其中一个即可）：
+   ```
+   ZHIPU_API_KEY=your_zhipu_api_key_here
+   # 或
+   TONGYI_API_KEY=your_tongyi_api_key_here
+   ```
+
+### 3. 准备文档
+1. 在项目根目录创建 `input` 文件夹（如果不存在）
+2. 将要处理的Word文档放入 `input` 文件夹
+
+### 4. 运行程序
+- **图形界面模式**（推荐）：
+  - Windows：双击 `start_gui.bat`
+  - 其他系统：运行 `python start_gui.py`
+- **命令行模式**：
+  ```bash
+  python main.py
+  ```
+
+### 5. 查看结果
+- 处理完成后，在 `output` 目录下可以找到：
+  - `docx_files/`：重写后的Word文档
+  - `markdown_files/`：重写后的Markdown文件
+  - `images/`：文档中的图片
 
 ## 使用方法
 
