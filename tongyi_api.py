@@ -7,7 +7,9 @@ import time
 
 class TongYiAPI:
     def __init__(self, max_retries: int = 5):
-        self.api_key = "sk-2b22adf0f9964fccba72d16a8599ff62"
+        self.api_key = os.environ.get("TONGYI_API_KEY", "")
+        if not self.api_key:
+            raise ValueError("未设置TONGYI_API_KEY环境变量")
         dashscope.api_key = self.api_key
         self.max_retries = max_retries
 

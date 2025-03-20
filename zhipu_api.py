@@ -8,7 +8,7 @@ import time
 
 class ZhipuAPI:
     def __init__(self, max_retries: int = 3):
-        self.api_key = "50ea3c031b07edc77a6a640ccb1526d1.NUhtei288b3OrwF4"
+        self.api_key = os.environ.get("ZHIPU_API_KEY", "")
         if not self.api_key:
             raise ValueError("未设置ZHIPU_API_KEY环境变量")
         self.client = ZhipuAI(api_key=self.api_key)
