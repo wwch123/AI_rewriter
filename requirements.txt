@@ -1,0 +1,13 @@
+python-docx>=0.8.11
+PyMuPDF>=1.21.1
+Pillow>=9.5.0
+openai>=0.27.0
+pdf2image>=1.16.3
+pytesseract>=0.3.10
+streamlit>=1.24.0
+numpy>=1.24.0
+PyQt5>=5.15.0
+python-dotenv>=0.21.0
+tqdm>=4.65.0
+lxml>=4.9.0
+psutil>=5.9.0 
